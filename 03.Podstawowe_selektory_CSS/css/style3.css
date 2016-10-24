@@ -1,0 +1,13 @@
+[type="submit"] {
+    background-color: blue;
+}
+[type*="email"] {
+    background-color: green;
+}
+[class~="important"] {
+    background-color: red;
+}
+[class^="important "] {
+    /*musi być spacja - bo jesli byłoby np. 'importanter' to też zakres je obejmnie, bo zaczyna się tak samo!!!!!!! */
+    background-color: pink;
+}

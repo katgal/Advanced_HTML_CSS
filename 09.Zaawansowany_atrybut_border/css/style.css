@@ -1,0 +1,64 @@
+/*exercise 1*/
+
+#jeden {
+    width: 150px;
+    height: 150px;
+    background-color: yellow;
+    border-radius: 50%;
+    text-align: center;
+    /*jeśli dorzucimy background-image: url(); zdjęcie w kształcie koła*/
+}
+#dwa {
+    background-color: green;
+    width: 170px;
+    height: 70px;
+    border-radius: 50%;
+    text-align: center;
+}
+#trzy {
+    background-color: greenyellow;
+    width: 70px;
+    height: 70px;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 5%;
+    border-bottom-left-radius: 50%;
+    /*border-radius: 5% 50% 5% 50%;*/
+    text-align: center;
+}
+
+/*exercise 2*/
+
+#cztery {
+    width: 200px;
+    height: 250px;
+    border: 1px solid red;
+    box-shadow: 0 0 1px 5px red;
+    /*box-shadow: harizontal vertical blur/rozmycie rozpiętość-cienia kolor*/
+}
+#bluered {
+    width: 150px;
+    height: 100px;
+    /*niebieski cień*/
+    box-shadow: 0 -10px 10px -5px blue;
+    border: 1px solid red;
+}
+#bluered div {
+    width: 150px;
+    height: 100px;
+    border: 1px solid green;
+    /*czerwony cień*/
+    /*przeżroczystość 15%, czyli widocznośc 85%*/
+    box-shadow: 0 10px 0 0 rgba(255, 0, 0, .85);
+    /*jesli bez tekstu to 10px (divy nakładają się na siebie, niebieski cień góra/czerwony cień dół - drugi div), z tekstem to kombinować z "-" -10px, bo tekst przesuwa cienie/2.diva i wtedy czerwony jest na końcu tekstu z diva 1.; tekst zamiast do 1. diva dać do drugiego i gra gitara :D*/
+}
+#skos {
+    width: 150px;
+    height: 100px;
+    background-color: green;
+    box-shadow: 10px 10px 0 0 blue;
+    border-radius: 5%;
+}
+
+/*filter:drop-shadow(0px 10px 0px rgba(255, 0,0, .85));*/ /*można tak zrobić cień na dole*/
+/*filter:drop-shadow(0px 10px 30px blue);*/

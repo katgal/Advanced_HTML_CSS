@@ -1,0 +1,21 @@
+/*exercise 1*/
+
+ul {
+    list-style-type: square;
+}
+
+/*exercise 2*/
+
+#menu {
+    list-style-type: none;
+    /*usuwa odstęp między elementami ul, ktore maja domyślną spację/pusty znak*/
+    font-size: 10px;
+    /*sposób na usuwanie white space*/
+}
+#menu li {
+    display: inline-block;
+    color: #116493;
+    font-size: 14px;
+    padding: 0 10px;
+    margin: 0;
+}

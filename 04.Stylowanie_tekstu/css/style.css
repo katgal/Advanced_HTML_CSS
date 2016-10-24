@@ -1,0 +1,62 @@
+/* część 2 - ustawienie @font-face*/
+
+@font-face {
+    font-family: "open_sansregular";
+    src: url('../Fonts/OpenSans-Regular-webfont.eot');
+    src: url('../Fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../Fonts/OpenSans-Regular-webfont.woff') format('woff'),
+         url('../Fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('../Fonts/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "open_sansbold";
+    src: url('../Fonts/OpenSans-Bold-webfont.eot');
+    src: url('../Fonts/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../Fonts/OpenSans-Bold-webfont.woff') format('woff'),
+         url('../Fonts/OpenSans-Bold-webfont.ttf') format('truetype'),
+         url('../Fonts/OpenSans-Bold-webfont.svg#open_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*część 1*/
+
+body {
+    /* część 2 - ustawienie czcionki z @font-face*/
+    font-family: "open_sansregular", Arial, sans-serif;
+}
+div {
+    width: 500px;
+}
+h1 {
+    background-color: #ACC4CE;
+    color: white;
+    font-size: 20px;
+    text-shadow: 6px 2px 12px #878787;
+    text-transform: uppercase;
+    text-align: center;
+    height: 30px;
+    /* część 2 - ustawienie 2. czcionki z @font-face*/
+    font-family: "open_sansbold", sans-serif;
+    letter-spacing: 1px;
+    line-height: 20px;
+
+}
+span {
+    color: #395075;
+    letter-spacing: 10px;
+    font-style: italic;
+}
+p {
+    color: grey;
+    /*font-size: 14px; bez czcionki z google*/
+    font-size: 16px;
+    text-indent: 20px;
+    line-height: 20px;
+    /*część 3 - dodanie czcionki z google*/
+    font-family: "Roboto", sans-serif;
+}

@@ -1,0 +1,38 @@
+/*zadanie 1 */
+
+p {
+    font-size: 12px !important;
+}
+p {
+    font-size: 40px;
+}
+
+/* dzieje się tak bo css parsuje elementy od góry do dołu, czyli paragraf 2. 'ma pierwszeństwo'*/
+
+
+/* zadanie 2 powinno być na id, ale na klasach też może być*/
+
+.ex2_1 {
+    font-size: 20px;
+}
+.ex2_2 {
+    font-size: 10px;
+}
+
+/*zadanie 3*/
+
+.ex_3 {
+    background-color: yellow;
+}
+
+/*zadanie 4* odp. zostanie dodane tło elementu id, czyli red*/
+
+#ex_4 {
+    background-color: red;
+}
+div {
+    background-color: blue;
+}
+.ex_4c {
+    background-color: green;
+}

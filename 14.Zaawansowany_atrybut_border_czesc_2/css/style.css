@@ -1,0 +1,18 @@
+#parent {
+    position: relative;
+    width: 600px;
+}
+#komentarz {
+    width: 400px;
+    height: 20px;
+    box-shadow: 1px 1px 3px 0px grey;
+    border-radius: 8px;
+    position: absolute;
+    top: 10px;
+    left: 100px;
+    padding: 10px;
+    font-size: 13px;
+}
+#limonka {
+    vertical-align: middle;
+}

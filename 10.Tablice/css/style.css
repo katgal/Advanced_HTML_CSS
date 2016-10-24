@@ -1,0 +1,33 @@
+table {
+    /*ex4*/
+    /*dzięki border-collapse: komórki są ze sobą połączone*/
+    border-collapse: collapse;
+    /*ex3 - odstępy między komórkami*/
+    /*border-collapse: separate;*/
+    /*border-spacing: 10px;*/
+}
+th, td {
+    border: 1px solid black;
+    padding: 10px 15px;
+}
+
+/*ex2*/
+
+th {
+    background-color: darkblue;
+    color: white;
+    font-weight: bold;
+}
+
+/*bajery*/
+
+/*podświetlanie komórki po najechaniu kursorem myszy*/
+td:hover {
+    background-color: green;
+}
+
+/*even - parzysta; odd - nieparzysta*/
+/*parzyste wiersze będą czerwone*/
+tr:nth-child(even) {
+    background: red;
+}

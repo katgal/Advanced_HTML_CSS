@@ -1,0 +1,25 @@
+/*table {
+  border-collapse: collapse;
+}
+*/
+/*problem dotyczy firefoxa*/
+/*jak używam border collapse znikają bordery, ale pojawiają się przy podświetleniu(?!), jak usunę thead i tbody nie ma takich problemów */
+
+th, td {
+    border: 1px solid black;
+    padding: 5px;
+}
+th {
+    background-color: darkblue;
+    color: white;
+    font-style: bold;
+}
+tbody tr:nth-child(even) {
+    background-color: lightblue;
+}
+tbody tr:nth-child(odd) {
+    background-color: blue;
+}
+td:hover {
+    color: red;
+}

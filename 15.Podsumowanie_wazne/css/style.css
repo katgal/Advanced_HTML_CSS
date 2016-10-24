@@ -1,0 +1,114 @@
+/*middle cantainer*/
+
+.width {
+    width: 800px;
+    height: 100%;
+    margin: 15px auto;
+    border: 1px solid red;
+    font-family: Arial, sans-serif;
+}
+
+/*header*/
+
+header {
+    background-color: black;
+    height: 100px;
+}
+header .width {
+    margin-top: 0;
+    position: relative;
+}
+h1 {
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    bottom: 30px;
+    display: inline-block;
+}
+ul {
+    list-style-type: none;
+    color: white;
+    position: absolute;
+    right: 0;
+    bottom: 40px;
+}
+li {
+    padding-left: 10px;
+    margin-left: 15px;
+    margin-top: 10px;
+    display: inline-block;
+    font-size: 20px;
+}
+
+/*middle section (2 squares)*/
+
+#section_1 {
+    background-color: white;
+    /*padding: 5px;*/
+}
+.w_sekcji_1 {
+    width: 49%;
+    height: 350px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    vertical-align: middle;
+    /*border: 1px solid black;*/
+}
+#kwadrat_1 {
+    background-color: black;
+    display: inline-block;
+}
+#kwadrat_2 {
+    background-color: white;
+    display: inline-block;
+}
+.font {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+h2 {
+    text-transform: uppercase;
+    margin: 10px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+p {
+    font-size: 18px;
+    text-align: justify;
+}
+
+/*3 squares section*/
+
+#section_2 {
+    background-color: black;
+    height: 400px;
+}
+.biale_kwadraty {
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
+.middle {
+    margin-left: 19px;
+}
+article:last-child {
+    margin-left: 20px;
+}
+
+/*footer, author, logo*/
+
+footer {
+    background-color: white;
+    height: 50px;
+}
+.author {
+    float: left;
+    margin: 10px;
+}
+.logo {
+    float: right;
+    margin: 10px;
+}

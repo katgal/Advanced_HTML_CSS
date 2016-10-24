@@ -1,0 +1,32 @@
+#pierwszy {
+    width: 500px;
+    height: 200px;
+    border: 1px solid red;
+    /*element, który ma większą wartość margin, będzie ustalać odległości w innych elementach, które mają tą wartość mnniejszą*/
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    /*można by zrobić margin: 20px auto, który ustawiłby pozostałe wartości automatycznie - wyśrodkowałby wszystko elegancko*/
+    padding: 20px;
+    text-align: justify;
+    display: inline-block;
+}
+#drugi {
+    width: 300px;
+    height: 150px;
+    border: 3px dashed green;
+    margin-top: 5px;
+    /*w tym pzypadku dzięki temu dwa divy (różnej wielkości) stwarzają wrażenie "wyrównanych" od góry*; można by również pobawić się floatem - bo od razu się ustawiały równo*/
+    margin-bottom: 30px;
+    padding: 15px;
+    /*overflow powoduje, ze tekst nie wychodzi poza ramkę - powstaje przesuwak*/
+    overflow: auto;
+    display: inline-block;
+}
+
+/*a jest inlinowy, więc ustawi się obok divów*/
+a {
+    margin: 20px;
+    display: block;
+    /*dzięki temu będzie pod divami, ale zajmie całą szerokość*/
+}

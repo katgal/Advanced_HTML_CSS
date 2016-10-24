@@ -1,0 +1,88 @@
+/*ex1*/
+
+#div_1 {
+    width: 400px;
+    height: 300px;
+    border: 1px solid black;
+    padding: 20px;
+}
+#div_1:hover {
+    background-color: blue;
+    border-radius: 55%;
+    overflow: auto;
+    padding: 10px;
+}
+#div_1:active {
+    background-color: white;
+    box-shadow: 0px 10px 10px -10px blue;
+    border-radius: 0%;
+}
+
+/* Zasada kolejności loVE and HAte */
+/* ad. pytania efekty nałożą się na siebie*/
+
+/*bajer ze stylowaniem pierwszej litery*/
+#div_1::first-letter {
+    font-size: 25px;
+    color: red;
+}
+
+/*ex2*/
+
+a {
+    border: 2px solid yellow;
+    border-radius: 25%;
+    background: yellow;
+    text-decoration: none;
+    padding: 5px;
+}
+a:visited {
+    background-color: grey;
+}
+a:hover {
+    background-color: green;
+    border-radius: 25%;
+}
+
+/*jeśli visited będzie po hover to nie podświetli nam na zielono linków już odwiedzonych, tak jak się to dzieje w prawidłowej kolejności wg. zasady LoVe and HAte*/
+
+
+/*bajer z ::after pamiętać o CONTENT!!*/
+ul::after {
+    content: "Bajer!! After po ul!";
+    color: red;
+    font-weight: bold;
+}
+
+/*ex3*/
+
+#navigation {
+    list-style-type: none;
+}
+li {
+    width: 75px;
+    background-color: green;
+    margin: 5px;
+    /*float: left;*/
+}
+li:first-child {
+    border-radius: 5px 0 0 5px;
+}
+li:last-child {
+    border-radius: 0 5px 5px 0;
+}
+#zebra p:nth-child(odd) {
+    background-color: grey;
+}
+#other div:first-child {
+    background-color: green;
+}
+#other div:last-child {
+    background-color: blue;
+}
+#from_end div:nth-last-of-type(2n+3) {
+    background-color: orange;
+}
+
+/*p:nth-child(odd) = (2n+1) zaczyna od 1 ale pętla *2 i następna liczba to 3, 5, 7*/
+/*div:nth-last-of-type(2n+3) zaczyna od 3 ale pętla *2 i następna liczba to 5,7*/
